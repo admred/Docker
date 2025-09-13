@@ -1,0 +1,36 @@
+syntax on
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set incsearch
+set autoindent
+set expandtab
+set number 
+set smartindent
+set hlsearch
+set cursorline
+
+map <silent> 1 :b! 1<CR>
+map <silent> 2 :b! 2<CR>
+map <silent> 3 :b! 3<CR>
+map <silent> 4 :b! 4<CR>
+map <silent> 5 :b! 5<CR>
+map <silent> 6 :b! 6<CR>
+map <silent> 7 :b! 7<CR>
+map <silent> 8 :b! 8<CR>
+map <silent> 9 :b! 9<CR>
+
+
+set wildmode=longest,list,full
+set wildmenu
+
+set laststatus=2
+set statusline=%f%m%r
+set clipboard=unnamed
+
+
+" https://stackoverflow.com/questions/5542675/how-to-get-ctags-working-inside-vim
+set autochdir
+set tags=tags;
+
+" https://stackoverflow.com/questions/1970544/how-to-manually-load-an-ftplugin-after-startup-in-vim

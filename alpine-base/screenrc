@@ -1,0 +1,8 @@
+sessionwname "Dockerized"
+deflogin on
+login on
+multiuser on
+addactl alpine, user
+chacl   alpine, user +rwx "#?"
+startup_message off
+shell -$SHELL
