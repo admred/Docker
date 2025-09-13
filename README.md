@@ -4,7 +4,7 @@
 
 ### probably you should re-create missing volumes
 
-> docker volume create <volname>
+> docker volume create  volname
 
 
 
