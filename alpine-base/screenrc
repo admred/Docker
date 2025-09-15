@@ -1,8 +1,7 @@
-sessionwname "Dockerized"
-deflogin on
-login on
 multiuser on
-addactl alpine, user
-chacl   alpine, user +rwx "#?"
+addacl alpine, user
 startup_message off
+term screen-256color
 shell -$SHELL
+
+termcapinfo xterm* ti@:te@
