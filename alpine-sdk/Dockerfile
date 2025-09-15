@@ -1,6 +1,7 @@
 FROM alpine-base
 
-# alpine-sdk : pulls build-base 
-# build-base:  pulls gcc, g++, make, libc-dev ), abuild (tar, pkg-conf, apk-tools...
-RUN apk add alpine-sdk ctags screen tmux
+# atools pulls lua*
+# alpine-sdk : pulls build-base (gcc, g++, make, libc-dev )
+# abuild: pulls tar, pkg-conf, apk-tools...
+RUN apk add alpine-sdk ctags screen gdb
 

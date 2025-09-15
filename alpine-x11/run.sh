@@ -10,7 +10,7 @@ CMD="$@"
 
 
 # try attach already running container
-ID=$(docker ps |awk '/${IMAGE}/{print $1}')
+ID=$(docker ps |awk /${IMAGE}/'{print $1}')
 
 if [ "$ID" ] ; then
     docker exec -it "$ID" $CMD
@@ -18,7 +18,7 @@ if [ "$ID" ] ; then
 fi
 
 # try attach already sleepy container
-ID=$(docker ps -a |awk '/${IMAGE}/{print $1}')
+ID=$(docker ps -a |awk /${IMAGE}/'{print $1}')
 
 if [ "$ID" ] ; then
     # wake up !
